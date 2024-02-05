@@ -9,7 +9,7 @@ export const AppWrapper = styled.main<AppWrapperProps>`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: ${(props) => (props.isOutput ? 'center' : 'center')};
+  justify-content: ${(props) => (props.isOutput ? 'space-between' : 'center')};
   height: 100svh;
   h1{
     padding: 0;
