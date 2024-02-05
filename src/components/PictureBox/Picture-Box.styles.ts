@@ -1,37 +1,32 @@
+import { Viewer } from "@react-pdf-viewer/core";
 import styled from "styled-components";
 
 export const PictureBoxWrapper = styled.div`
   position: relative;
   width: 80svw;
+  max-height: 80svh;
   display: flex;
   gap: 10px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 10px 0;
-  /* border: 1px solid rgba(255, 255, 255, 0.5); */
-  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
   border-radius: 10px;
-  iframe {
-    width: 100%;
-    min-height: 70svh;
-    height: auto;
-    max-height: 70svh;
-    object-fit: contain;
-    z-index: 1;
-  }
-  div {
-    width: 100%;
-    height: 70svh;
-    background-color: rgba(255, 255, 255, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-  }
-  & > :first-child {
-    align-self: flex-end;
-  }
+
+`;
+
+export const UploadPlaceholder = styled.div`
+  width: 100%;
+  height: 70svh;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+`;
+
+export const StyledPdfViewer = styled(Viewer)`
+
 `;
 
 export const UploadScreen = styled.div`

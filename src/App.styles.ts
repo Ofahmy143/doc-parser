@@ -9,8 +9,13 @@ export const AppWrapper = styled.main<AppWrapperProps>`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: ${(props) => (props.isOutput ? 'space-between' : 'center')};
+  justify-content: ${(props) => (props.isOutput ? 'center' : 'center')};
   height: 100svh;
+  h1{
+    padding: 0;
+    margin: 0;
+  }
+  gap: 10px;
 `;
 
 export const OutputImg = styled.img`
