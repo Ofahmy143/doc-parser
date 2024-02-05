@@ -14,7 +14,7 @@ function App() {
     const formData = new FormData();
     formData.append("pdf_file", file);
     try {
-      const response = await fetch("http://localhost:5000/analyze-pdf", {
+      const response = await fetch("/api/analyze-pdf", {
         method: "POST",
         body: formData,
       });
